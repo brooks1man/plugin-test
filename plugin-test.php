@@ -46,6 +46,9 @@ if(!class_exists('Plugin_Test')) {
 
          $data = json_decode($response['body'], true);
 
+         // https://wordpress.stackexchange.com/questions/416186/private-plugin-updating-github-zip-file-changes-the-plugin-directory-with-rel
+         // Might have to self download it, extract it, and rename the folder.
+
          // Check to see if returned update URI contains pluginFile object (plugin folder/file).
          if(isset($data[$pluginFile]) && !empty($data[$pluginFile])) {
             return $data[$pluginFile];
