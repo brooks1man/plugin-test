@@ -1,0 +1,6 @@
+{
+   "plugin-test/plugin-test.php": {
+       "version": "1.0.0",
+       "package": "https://github.com/brooks1man/plugin-test/archive/refs/tags/v1.0.0.zip"
+   }
+}
